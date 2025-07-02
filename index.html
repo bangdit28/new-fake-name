@@ -40,23 +40,9 @@
         #suku-selector { margin-bottom: 30px; border: none; padding: 0; }
         #suku-selector legend { display: none; }
         
-        /* PERUBAHAN CSS DI SINI */
-        .suku-options {
-            display: flex;
-            justify-content: center;
-            gap: 12px; /* Diperkecil dari 15px */
-            flex-wrap: wrap;
-        }
-        .suku-options label {
-            cursor: pointer;
-            font-size: 0.8rem; /* Diperkecil dari 0.9rem */
-            color: var(--secondary-color);
-        }
-        .suku-options input[type="checkbox"] {
-            margin-right: 3px; /* Diperkecil dari 4px */
-            transform: scale(0.9); /* Sedikit mengecilkan kotak centang */
-        }
-        /* AKHIR PERUBAHAN CSS */
+        .suku-options { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .suku-options label { cursor: pointer; font-size: 0.8rem; color: var(--secondary-color); }
+        .suku-options input[type="checkbox"] { margin-right: 3px; transform: scale(0.9); }
 
         .hasil-nama-wrapper { position: relative; margin-bottom: 30px; }
         #nama-hasil { font-size: 1.75rem; font-weight: 600; background-color: #e9ecef; padding: 20px; border-radius: 8px; min-height: 30px; display: flex; justify-content: center; align-items: center; word-break: break-all; transition: background-color 0.3s; }
