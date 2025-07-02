@@ -39,9 +39,24 @@
 
         #suku-selector { margin-bottom: 30px; border: none; padding: 0; }
         #suku-selector legend { display: none; }
-        .suku-options { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .suku-options label { cursor: pointer; font-size: 0.9rem; color: var(--secondary-color); }
-        .suku-options input[type="checkbox"] { margin-right: 4px; }
+        
+        /* PERUBAHAN CSS DI SINI */
+        .suku-options {
+            display: flex;
+            justify-content: center;
+            gap: 12px; /* Diperkecil dari 15px */
+            flex-wrap: wrap;
+        }
+        .suku-options label {
+            cursor: pointer;
+            font-size: 0.8rem; /* Diperkecil dari 0.9rem */
+            color: var(--secondary-color);
+        }
+        .suku-options input[type="checkbox"] {
+            margin-right: 3px; /* Diperkecil dari 4px */
+            transform: scale(0.9); /* Sedikit mengecilkan kotak centang */
+        }
+        /* AKHIR PERUBAHAN CSS */
 
         .hasil-nama-wrapper { position: relative; margin-bottom: 30px; }
         #nama-hasil { font-size: 1.75rem; font-weight: 600; background-color: #e9ecef; padding: 20px; border-radius: 8px; min-height: 30px; display: flex; justify-content: center; align-items: center; word-break: break-all; transition: background-color 0.3s; }
@@ -100,7 +115,7 @@
 
         <div class="hasil-nama-wrapper"><div id="nama-hasil" class="placeholder">...</div></div>
         <div class="buttons">
-            <button id="generate-btn">Buat Nama</button>
+            <button id="generate-btn">Buat Nama Baru</button>
             <button id="copy-btn" disabled>Salin Nama</button>
         </div>
         <div class="footer-links">
